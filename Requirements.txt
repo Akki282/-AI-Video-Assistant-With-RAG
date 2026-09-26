@@ -1,0 +1,43 @@
+# ---- UI ----
+streamlit==1.38.0
+
+# ---- Audio acquisition ----
+yt-dlp==2024.8.6
+
+# ---- Transcription (local Whisper) ----
+openai-whisper==20231117
+ffmpeg-python==0.2.0
+pydub==0.25.1
+requests==2.34.2
+
+# ---- Translation (Hindi -> English) ----
+googletrans==4.0.0-rc1
+# Alternative if googletrans proves unstable:
+# deep-translator==1.11.4
+
+# ---- LangChain + Groq (LCEL summarisation, action items, decisions) ----
+langchain==0.2.16
+langchain-core==0.2.38
+langchain-community==0.2.16
+langchain-groq==0.1.5
+
+# ---- RAG pipeline ----
+langchain-chroma==0.1.4
+chromadb==0.5.23
+sentence-transformers==3.0.1
+langchain-huggingface==0.0.3
+langchain-text-splitters==0.2.4
+# Must stay pinned: newer transformers pulls tokenizers>=0.22, which
+# conflicts with the chromadb/tokenizers pair langchain-chroma 0.1.4 needs.
+transformers==4.46.3
+
+# ---- PDF / TXT export ----
+fpdf2==2.7.9
+reportlab==4.2.2
+
+# ---- Core utilities ----
+python-dotenv==1.0.1
+pydantic==2.8.2
+numpy==1.26.4
+torch==2.3.1
+tiktoken==0.7.0
