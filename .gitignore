@@ -19,6 +19,7 @@ chroma.sqlite3
 # Temp media
 uploads/
 output/
+downloads/
 *.mp4
 *.mp3
 *.wav
