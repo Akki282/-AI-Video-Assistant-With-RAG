@@ -91,12 +91,8 @@ pip install streamlit==1.38.0 yt-dlp==2024.8.6 openai-whisper==20231117 ffmpeg-p
 
 ## Configuration
 
-Create a `.env` file in the project root:
-
-```bash
-GROQ_API_KEY="gsk_..."
-SARVAM_API_KEY="sk_..."
-```
+Create a `.env` file in the project root and fill in the values you obtained
+from the providers below. Do not commit this file.
 
 | Variable | Required | Default | Purpose |
 |---|---|---|---|
